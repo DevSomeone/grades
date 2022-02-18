@@ -30,7 +30,3 @@
 ## 查詢
 
 <button id="submit" onclick="async function a(){try{window.goPage=window.goPage;}catch(e){window.goPage=()=>{}};if(typeof goPage==='undefined'){var f=await fetch('/PageGo.js');var t=await f.text();eval(t);}goPage();};a();ga('send',{hitType:'event',eventCategory:'form',eventAction:'submit_and_go',eventLabel:'Getting Grades'});">查詢</button>
-
-
-
-___This page is is licensed under the [Apache-2.0 license](https://gist.github.com/000hen/6d14d591fe426149a85daf9f7db11b65#file-license). Source [Github Gist](https://gist.github.com/000hen/6d14d591fe426149a85daf9f7db11b65#gistcomment-4039052), Origin: [Github Gist](https://gist.github.com/000hen/6d14d591fe426149a85daf9f7db11b65)___
