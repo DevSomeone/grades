@@ -9,8 +9,8 @@
 年分 <input id="year" type="number" onkeyup="if(this.value.length > 3) {event.preventDefault();alert('是三位數的，除非中華民國超過千年w');}" value="110">
 
 學期 <select id="semester">
-    <option label="上" selected>1</option>
-    <option label="下">2</option>
+    <option label="上">1</option>
+    <option label="下" selected>2</option>
 </select>
 
 年級 <select id="grade">
@@ -22,9 +22,9 @@
 第幾次考試 <select id="time">
     <option label="學期平時成績">0</option>
     <option label="複習考">1</option>
-    <option label="第一次期中考">2</option>
+    <option label="第一次期中考" selected>2</option>
     <option label="第二次期中考">3</option>
-    <option label="期末考" selected>4</option>
+    <option label="期末考">4</option>
 </select>
 
 ## 查詢
