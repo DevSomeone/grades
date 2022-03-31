@@ -18,4 +18,5 @@ document.getElementById("grade").addEventListener("change", event => {
         if (j[i] === now) h = "selected";
         f += `<option label="${j[i]}" ${h}>${i}</option>`;
     }
+    document.getElementById("time").innerHTML = f;
 });
