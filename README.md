@@ -19,14 +19,11 @@
     <option label="三">3</option>
 </select>
 
-第幾次考試 <select id="time">
-    <option label="學期平時成績">0</option>
-    <option label="複習考">1</option>
-    <option label="第一次期中考" selected>2</option>
-    <option label="第二次期中考">3</option>
-    <option label="期末考">4</option>
-</select>
+第幾次考試 <select id="time"></select>
 
 ## 查詢
 
 <button id="submit" onclick="async function a(){try{window.goPage=window.goPage;}catch(e){window.goPage=()=>{}};if(typeof goPage==='undefined'){var f=await fetch('PageGo.js');var t=await f.text();eval(t);}goPage();};a();">查詢</button>
+
+
+<script src="page.js"></script>
