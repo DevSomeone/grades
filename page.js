@@ -9,7 +9,7 @@ var now = "第一次期中考";
 
 function g(grade, term) {
     var j = [...tests];
-    if (grade !== 1 && term !== 1) j.splice(1, 1);
+    if (grade !== 1 || term !== 1 && grade === 1) j.splice(1, 1);
     var f = "";
     var h = "";
 
@@ -23,6 +23,9 @@ function g(grade, term) {
 }
 
 document.getElementById("grade").addEventListener("change", event => {
+    g(Number(document.getElementById("grade").value), Number(document.getElementById("semester").value));
+});
+document.getElementById("semester").addEventListener("change", event => {
     g(Number(document.getElementById("grade").value), Number(document.getElementById("semester").value));
 });
 g(Number(document.getElementById("grade").value), Number(document.getElementById("semester").value));
