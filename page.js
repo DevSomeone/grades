@@ -24,4 +24,4 @@ function g(grade, term) {
 }
 
 document.getElementById("grade").addEventListener("change", g(Number(document.getElementById("grade").value), Number(document.getElementById("semester").value)));
-document.addEventListener("ready", g(Number(document.getElementById("grade").value), document.getElementById("semester").value)));
+document.addEventListener("ready", g(Number(document.getElementById("grade").value), Number(document.getElementById("semester").value)));
