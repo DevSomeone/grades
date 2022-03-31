@@ -7,19 +7,20 @@ var tests = [
 ];
 var now = "第一次期中考";
 
-function g() {
+function g(grade) {
     var j = [...tests];
-    var doc = document.getElementById("grade");
-    if (doc.value !== 1) j.splice(1, 1);
+    if (grade !== 1) j.splice(1, 1);
     var f = "";
     var h = "";
 
     for (var i = 0; i < j.length; i++) {
         if (j[i] === now) h = "selected";
         f += `<option label="${j[i]}" ${h}>${i}</option>`;
-    
-    document.getElementById("time").innerHTML = f;
-});
+        h = "";
+    }
+  
+    return f;
+}
 
-document.getElementById("grade").addEventListener("change", g);
-document.addEventListener("ready", g);
+document.getElementById("grade").addEventListener("change", g(Number(document.getElementById("grade").value)));
+document.addEventListener("ready", g(Number(document.getElementById("grade").value)));
