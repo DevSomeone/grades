@@ -7,9 +7,9 @@ var tests = [
 ];
 var now = "第一次期中考";
 
-function g(grade) {
+function g(grade, term) {
     var j = [...tests];
-    if (grade !== 1) j.splice(1, 1);
+    if (grade !== 1 && term !== 1) j.splice(1, 1);
     var f = "";
     var h = "";
 
@@ -23,5 +23,5 @@ function g(grade) {
     return f;
 }
 
-document.getElementById("grade").addEventListener("change", g(Number(document.getElementById("grade").value)));
-document.addEventListener("ready", g(Number(document.getElementById("grade").value)));
+document.getElementById("grade").addEventListener("change", g(Number(document.getElementById("grade").value), Number(document.getElementById("semester").value)));
+document.addEventListener("ready", g(Number(document.getElementById("grade").value), document.getElementById("semester").value)));
