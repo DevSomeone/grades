@@ -25,6 +25,4 @@ function g(grade, term) {
 document.getElementById("grade").addEventListener("change", event => {
     g(Number(document.getElementById("grade").value), Number(document.getElementById("semester").value));
 });
-document.addEventListener("ready", event => {
-    g(Number(document.getElementById("grade").value), Number(document.getElementById("semester").value));
-});
+g(Number(document.getElementById("grade").value), Number(document.getElementById("semester").value));
