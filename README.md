@@ -23,6 +23,9 @@
 
 ## 查詢
 
+> ___礙於現階段成績ID的驗證資料不足，因此非一年級(現階段)的成績可能無法查詢___  
+> ___如果有人可以[提供](mailto:imh948794@gmail.com)非一年級的帳號，我將可以做成績ID的分析___  
+
 <button id="submit" onclick="async function a(){try{window.goPage=window.goPage;}catch(e){window.goPage=()=>{}};if(typeof goPage==='undefined'){var f=await fetch('PageGo.js');var t=await f.text();eval(t);}goPage();};a();">查詢</button>
 
 
