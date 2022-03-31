@@ -19,6 +19,7 @@ function g(grade) {
         h = "";
     }
   
+    document.getElementById("time").innerHTML = f;
     return f;
 }
 
