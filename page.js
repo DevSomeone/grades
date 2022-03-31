@@ -20,8 +20,11 @@ function g(grade, term) {
     }
   
     document.getElementById("time").innerHTML = f;
-    return f;
 }
 
-document.getElementById("grade").addEventListener("change", g(Number(document.getElementById("grade").value), Number(document.getElementById("semester").value)));
-document.addEventListener("ready", g(Number(document.getElementById("grade").value), Number(document.getElementById("semester").value)));
+document.getElementById("grade").addEventListener("change", event => {
+    g(Number(document.getElementById("grade").value), Number(document.getElementById("semester").value));
+});
+document.addEventListener("ready", event => {
+    g(Number(document.getElementById("grade").value), Number(document.getElementById("semester").value));
+});
