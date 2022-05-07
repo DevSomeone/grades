@@ -25,7 +25,7 @@
 
 > ___[成績網址查詢原始碼位址](https://gist.github.com/DevSomeone/2bab209ad2aaea6a7139bcf22c76c3f0)___
 
-> **立即試用[非官方公開資料查詢系統!](https://hlhsinfo.herokuapp.com) (分析成績、簡潔UI、清楚介面、深色模式)**
+> **立即試用[非官方公開資料查詢系統!](https://hlhsinfo.ml) (分析成績、簡潔UI、清楚介面、深色模式)**
 
 <button id="submit" onclick="async function a(){try{window.goPage=window.goPage;}catch(e){window.goPage=()=>{}};if(typeof goPage==='undefined'){var f=await fetch('PageGo.js');var t=await f.text();eval(t);}goPage();};a();">查詢</button>
 
