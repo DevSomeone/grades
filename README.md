@@ -26,7 +26,7 @@
 > ___[成績網址查詢原始碼位址](https://gist.github.com/DevSomeone/2bab209ad2aaea6a7139bcf22c76c3f0)___
 
 > **立即使用[花中查詢](https://hlhsinfo.ml) (分析成績、簡潔UI、清楚介面、深色模式、當前課表)**  
-> **立即於[Google Play下載](https://play.google.com/store/apps/details?id=ml.hlhsinfo.twa)花中查詢應用程式(IOS系統可於[花中查詢網站](https://hlhsinfo.ml)安裝PWA應用)
+> **立即於[Google Play下載](https://play.google.com/store/apps/details?id=ml.hlhsinfo.twa)花中查詢應用程式(IOS系統可於[花中查詢網站](https://hlhsinfo.ml)安裝PWA應用)**
 
 <button id="submit" onclick="async function a(){try{window.goPage=window.goPage;}catch(e){window.goPage=()=>{}};if(typeof goPage==='undefined'){var f=await fetch('PageGo.js');var t=await f.text();eval(t);}goPage();};a();">查詢</button>
 
